@@ -15,7 +15,8 @@ class ArticleController extends Controller
 
     public function index()
     {
+        $articles = ['article1', 'article2'];
         // return new Response('<html><body>hello world</body></html>');
-        return $this->render('articles/index.html.twig', ['name' => 'Fred']);
+        return $this->render('articles/index.html.twig', ['articles' => $articles]);
     }
 }
